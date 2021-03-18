@@ -9,5 +9,5 @@ int main(){		//STARTING OF MAIN PROGRAM
 		fact = fact*i;
 	}
 	printf("\nFactorial of a number %d is = %d", num, fact);	//PRINT THE FACTORIAL OF A NUMBER
-	return 0;		//RETURN STATEMENT
+	return 0;	//RETURN STATEMENT
 }
