@@ -16,7 +16,7 @@ int main()		//STARTING OF MAIN PROGRAM
 	if(temp==sum)	//IF-STATEMENT
 		printf("%d is Armstrong number ", temp);	//PRINT IF NUMBER IS ARMSTRONG NUMBER
 	else			//ELSSE-STATEMENT
-		printf("%d is not a Armstrong number", temp);	//PRINT IF NUMBER IS NOT A ARMSTRONG NUMBER
+		printf("%d is not a Armstrong number", 	temp);	//PRINT IF NUMBER IS NOT A ARMSTRONG NUMBER
 	return 0;		//RETURN STATEMENT
 }
 
