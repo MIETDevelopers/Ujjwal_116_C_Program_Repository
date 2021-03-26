@@ -4,22 +4,25 @@ PURPOSE:TO FIND THE MAXIMUM ELEMENT IN AN ARRAY */
 int main() //STARTING OF MAIN PROGRAM
 {
 int i; // DECLARING VARIABLES NAMED "i"
-float arr[5]; // DECLARING ARRAY OF SIZE 5 WITH FLOAT DATA TYPE 
-scanf("%f", arr);
+int arr[5]; // DECLARING ARRAY OF SIZE 5 WITH FLOAT DATA TYPE 
 printf("Please enter five numbers: \n"); // PRINT FIVE ELEMENT OF AN ARRAY
 
-for (i = 0; i < 5; ++i) //FOR-LOOP(INITIALIZATION;CONDITION;INCREMENTATION/DECREMENTATION)
+for (i = 0; i < 5; i++) //FOR-LOOP(INITIALIZATION;CONDITION;INCREMENTATION/DECREMENTATION)
 {
 
-    scanf("%f", &arr[i]);     //READ USER INPUT
+    scanf("%d", &arr[i]);     //READ USER INPUT
 }
-
-for (i = 1; i < 5; ++i)     //FOR-LOOP(INITIALIZATION;CONDITION;INCREMENTATION/DECREMENTATION)
+int max = arr[0];   //DECLARING VARIABLES NAMED "max"
+int maxindex = 0;   //DECLARING VARIABLES NAMED "maxindex"
+for (i = 0; i < 5; i++)     //FOR-LOOP(INITIALIZATION;CONDITION;INCREMENTATION/DECREMENTATION)
 {
-    if (arr[0] < arr[i])    //IF-STATEMENT
-        arr[0] = arr[i];
+    if (max < arr[i]) {   //IF-STATEMENT
+        max = arr[i];
+        maxindex = i;
+    }
 }
-printf("Largest element = %.2f", arr[0]);   //PRINT OUTPUT OF THE PROGRAM
+printf("Largest element = %d\n", max);   //PRINT OUTPUT OF THE PROGRAM
+printf("Largest index = %d", maxindex);
 
 return 0;   //RETURN STATEMENT
 }
